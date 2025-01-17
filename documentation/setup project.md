@@ -19,3 +19,4 @@ Step 3:
 Step 4: Create the Interactive Timeline
 - Update static/script.js to Create the Timeline
 - Style the Timeline:
+

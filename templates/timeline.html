@@ -11,17 +11,11 @@
         <header class="App-header">
             <h1>{{ title }}</h1>
         </header>
-        <div id="timeline">
-            <ul>
-                {% for event in events %}
-                    <li>
-                        <strong>{{ event.year }}: {{ event.event }} ({{ event.continent }})</strong>
-                        <p>{{ event.summary }}</p>
-                    </li>
-                {% endfor %}
-            </ul>
-        </div>
+        <div id="timeline"></div>
         <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script>
+            const data = {{ events | tojson | safe }};
+        </script>
         <script src="{{ url_for('static', filename='script.js') }}"></script>
     </div>
 </body>
