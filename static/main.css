@@ -5,6 +5,8 @@ body {
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: #f4f4f9;
+    color: #333;
 }
 
 code {
@@ -16,30 +18,48 @@ code {
     text-align: center;
 }
 
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
-}
-
 .App-header {
     background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
+    padding: 20px;
     color: white;
 }
 
-.App-link {
-    color: #61dafb;
+h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
 }
 
-.heart {
-    color: #ff0000;
+#timeline {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#timeline ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#timeline li {
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#timeline li:last-child {
+    border-bottom: none;
+}
+
+#timeline li strong {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
 }
 
 .small {
     font-size: 0.75rem;
+    color: #666;
 }
