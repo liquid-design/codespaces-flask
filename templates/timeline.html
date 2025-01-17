@@ -10,14 +10,10 @@
     <div class="App">
         <header class="App-header">
             <h1>{{ title }}</h1>
-            <p>
-                Welcome to the Interactive Historical Timeline project!
-            </p>
-            <p class="small">
-                Edit <code>templates/index.html</code> and refresh to see your changes!
-            </p>
-            <a href="{{ url_for('timeline') }}">View Timeline</a>
         </header>
+        <div id="timeline"></div>
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
     </div>
 </body>
 </html>
