@@ -10,7 +10,8 @@ Step 2:
 
 Step 3:
 - Install the Wikipedia API Library
-- Fetch Data from Wikipedia
+- Fetch Data from Wikipedia and specify user agent according 
+  https://meta.wikimedia.org/wiki/User-Agent_policy
 - Update your app.py to fetch data from Wikipedia
 - Display Wikipedia Summaries in the Template
 - Update timeline.html to display the summaries
