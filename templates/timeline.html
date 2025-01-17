@@ -11,7 +11,13 @@
         <header class="App-header">
             <h1>{{ title }}</h1>
         </header>
-        <div id="timeline"></div>
+        <div id="timeline">
+            <ul>
+                {% for event in events %}
+                    <li>{{ event.year }}: {{ event.event }} ({{ event.continent }})</li>
+                {% endfor %}
+            </ul>
+        </div>
         <script src="https://d3js.org/d3.v6.min.js"></script>
         <script src="{{ url_for('static', filename='script.js') }}"></script>
     </div>
