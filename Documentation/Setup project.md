@@ -2,6 +2,7 @@ Step 1: Set Up Your Project
 done see "./Setup Environment.md"
 
 Step 2: 
+- Create historical_events.csv
 - Read Data from CSV Files
 - Read the CSV File in Flask using pandas:
 - Update your app.py to read the CSV file and pass the data to the template
