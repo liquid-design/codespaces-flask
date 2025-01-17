@@ -1,6 +1,6 @@
 // Example D3.js code to create an interactive timeline
-const margin = {top: 20, right: 30, bottom: 40, left: 40},
-    width = 960 - margin.left - margin.right,
+const margin = {top: 20, right: 30, bottom: 40, left: 55},
+    width = 1024 - margin.left - margin.right,
     height = 5000 - margin.top - margin.bottom;
 
 const svg = d3.select("#timeline").append("svg")
