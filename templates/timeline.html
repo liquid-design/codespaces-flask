@@ -14,7 +14,10 @@
         <div id="timeline">
             <ul>
                 {% for event in events %}
-                    <li>{{ event.year }}: {{ event.event }} ({{ event.continent }})</li>
+                    <li>
+                        <strong>{{ event.year }}: {{ event.event }} ({{ event.continent }})</strong>
+                        <p>{{ event.summary }}</p>
+                    </li>
                 {% endfor %}
             </ul>
         </div>
