@@ -4,7 +4,12 @@ import wikipediaapi
 
 app = Flask(__name__)
 
-wiki_wiki = wikipediaapi.Wikipedia('en')
+# Set up Wikipedia API with a user agent
+wiki_wiki = wikipediaapi.Wikipedia(
+    language='en',
+    extract_format=wikipediaapi.ExtractFormat.WIKI,
+    user_agent="HistoricalTimelineApp/1.0 (info@liquid-design.be)"
+)
 
 def get_wikipedia_summary(event):
     page = wiki_wiki.page(event)
