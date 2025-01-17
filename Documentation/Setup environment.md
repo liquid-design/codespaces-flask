@@ -8,3 +8,6 @@ In codespaces in the terminal below execure the following:
 2. Install Flask:
 ``pip install Flask``
 
+3. Install Django
+``pip istall Django``
+
